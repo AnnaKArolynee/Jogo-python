@@ -6,24 +6,24 @@ pygame.mixer.init()
 pygame.init()
 
 # Adcionando música de fundo
-pygame.mixer.music.load('imagem_jogo\WhatsApp Audio 2025-01-25 at 16.38.19.mpeg')
+pygame.mixer.music.load('WhatsApp Audio 2025-01-25 at 16.38.19.mpeg')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.5)
 
 
 # Adcionando aúdio para o tiro
-shot_sound = pygame.mixer.Sound('imagem_jogo\WhatsApp Audio 2025-01-25 at 16.39.32.mpeg')
+shot_sound = pygame.mixer.Sound('WhatsApp Audio 2025-01-25 at 16.39.32.mpeg')
 
 # Configuração da tela
 screen = pygame.display.set_mode([960, 540])
 pygame.display.set_caption('Jogo de Python')
 
 # Imagens usadas
-img_background = pygame.image.load('imagem_jogo/space bg game.png')
-nav_player = pygame.image.load('C:/Users/akaro/OneDrive/Documentos/Jogo-Python/imagem_jogo/ship_A.png')
-nav_enemy = pygame.image.load('C:/Users/akaro/OneDrive/Documentos/Jogo-Python/imagem_jogo/enemy_A.png')
-nav_Enemy = pygame.image.load('C:/Users/akaro/OneDrive/Documentos/Jogo-Python/imagem_jogo/satellite_A.png')
-missil = pygame.image.load('C:/Users/akaro/OneDrive/Documentos/Jogo-Python/imagem_jogo/tiro.png')
+img_background = pygame.image.load('space bg game.png')
+nav_player = pygame.image.load('ship_A.png')
+nav_enemy = pygame.image.load('enemy_A.png')
+nav_Enemy = pygame.image.load('satellite_A.png')
+missil = pygame.image.load('tiro.png')
 missil = pygame.transform.scale(missil, (30, 30))
 
 # Fonte para textos
@@ -228,4 +228,6 @@ while loop:
             reset_game()
 
     pygame.display.update()
+
+
 
